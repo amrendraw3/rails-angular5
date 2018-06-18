@@ -1,0 +1,35 @@
+<div class="container">
+   <div  class="well">
+    <form (submit)="save()">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" name="title" id="title" [(ngModel)]="model.title">
+      </div>
+       
+      <div class="form-group">
+        <label for="text">Text</label>
+        <input type="text" class="form-control" name="text" id="text" [(ngModel)]="model.text" >
+      </div>
+       
+      <input type="submit" class="btn btn-primary" value="Save">
+    </form>
+  </div>
+</div>
+<div class="container">
+  <div  class="well">
+    <table  class="table">
+      <thead>
+        <tr>
+          <td>Title</td>
+          <td>Text</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let posts of posts">
+          <td>{{posts.title}}</td>
+          <td>{{posts.text}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
