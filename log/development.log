@@ -339,3 +339,10 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/posts" for 127.0.0.1 at 2018-06-22 18:01:54 +0530
+  
+SyntaxError (/home/mangla/rails/rails-angular5/config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end
+  root: 'post#index'
+       ^):
+  
+config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end
