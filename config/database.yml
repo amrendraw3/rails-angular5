@@ -5,22 +5,25 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  database: sample_development
+  username: postgres
+  password: w3villa!
+  host: localhost
+  port: 5432
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: rails-angular5_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: rails-angular5_test
 
 production:
   <<: *default
-  adopter: postgresql
-  database: prod_db
+  database: rails-angular5_production

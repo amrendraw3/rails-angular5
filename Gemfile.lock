@@ -89,6 +89,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
+    pg (1.0.0)
     puma (3.11.4)
     rack (2.0.5)
     rack-cors (1.0.2)
@@ -141,7 +142,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.3.13)
     temple (0.8.0)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
@@ -166,6 +166,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   live_notifications!
   paperclip (~> 6.0.0)
+  pg
   puma (~> 3.7)
   rack-cors
   rails (~> 5.1.6)
@@ -173,7 +174,6 @@ DEPENDENCIES
   slim
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
   tzinfo-data
 
 BUNDLED WITH
